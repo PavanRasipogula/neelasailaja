@@ -108,7 +108,7 @@ export const initialWeddingConfig: WeddingConfig = {
   venue: {
     sectionTitle: "Celebrate With Us",
     name: "GMR Puram, SR Puram",
-    address: "893G+MG2 GMR PURAM, GMR puram village, 1-3, Ksheerasamudram post, SR Puram, Krishnajammapuram, Pathapalem, Andhra Pradesh 517167",
+    address: "893G+MG2 GMR PURAM, GMR puram village, 1-3, Ksheerasamudram post, SR Puram, Chittoor, AP 517167",
     googleMapsUrl: "https://share.google/DPkiSCm6Jw8k5sKyM",
   },
   closing: {
