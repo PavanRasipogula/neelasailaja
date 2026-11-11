@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-rose-pink: #E8A6B5;
+    --color-dusty-pink: #D99AAA;
+    --color-blush-pink: #F7DCE2;
+    --color-cream: #FFF5EA;
+    --color-ivory: #FFFDF8;
+    --color-deep-burgundy: #783C50;
+    --color-sage-green: #A8B69A;
+    --color-soft-gold: #D8B779;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+.font-serif-cormorant {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Alex Brush', cursive;
+}
+
+/* Needle-felt wool texture pattern overlay */
+.felt-texture-bg {
+  background-color: #FFFDF8;
+  background-image: 
+    radial-gradient(#E8A6B5 0.75px, transparent 0.75px),
+    radial-gradient(#D8B779 0.65px, #FFFDF8 0.65px);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Wool card felt depth */
+.felt-card {
+  background: #FFFDF8;
+  border: 2px dashed rgba(217, 154, 170, 0.45);
+  box-shadow: 
+    0 4px 6px -1px rgba(120, 60, 80, 0.05),
+    0 10px 25px -5px rgba(120, 60, 80, 0.08),
+    inset 0 1px 2px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 4px rgba(120, 60, 80, 0.03);
+  position: relative;
+}
+
+.felt-card-blush {
+  background: #FFF5EA;
+  border: 2px dashed rgba(232, 166, 181, 0.6);
+  box-shadow: 
+    0 8px 30px -4px rgba(120, 60, 80, 0.09),
+    inset 0 2px 4px rgba(255, 255, 255, 0.8);
+}
+
+.felt-stitch-border {
+  border: 2px dashed #D99AAA;
+}
+
+/* Gold embroidered ribbon accent */
+.gold-stitch-border {
+  border: 2px dashed #D8B779;
+}
+
+/* Soft wool button */
+.felt-button-primary {
+  background: linear-gradient(135deg, #E8A6B5 0%, #D99AAA 100%);
+  color: #FFFFFF;
+  box-shadow: 
+    0 4px 14px 0 rgba(217, 154, 170, 0.45),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 0 rgba(120, 60, 80, 0.2);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.felt-button-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px 0 rgba(217, 154, 170, 0.55),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5),
+    inset 0 -2px 0 rgba(120, 60, 80, 0.25);
+}
+
+.felt-button-gold {
+  background: linear-gradient(135deg, #E5C388 0%, #D8B779 100%);
+  color: #552737;
+  box-shadow: 
+    0 4px 14px 0 rgba(216, 183, 121, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.5);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.felt-button-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 6px 20px 0 rgba(216, 183, 121, 0.5),
+    inset 0 1px 1px rgba(255, 255, 255, 0.6);
+}
+
+/* Keyframes for gentle romantic motion */
+@keyframes petalDrift {
+  0% {
+    transform: translateY(-10px) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg) translateX(40px);
+    opacity: 0;
+  }
+}
+
+@keyframes woolFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+@keyframes fairyGlow {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes butterflyFlap {
+  0%, 100% {
+    transform: rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: rotateY(70deg) scale(0.95);
+  }
+}
+
+.animate-wool-float {
+  animation: woolFloat 5s ease-in-out infinite;
+}
+
+.animate-fairy-glow {
+  animation: fairyGlow 3s ease-in-out infinite;
+}
+
+.animate-butterfly-wing {
+  animation: butterflyFlap 0.35s ease-in-out infinite alternate;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FFFDF8;
+}
+::-webkit-scrollbar-thumb {
+  background: #E8A6B5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D99AAA;
+}

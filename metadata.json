@@ -1,0 +1,6 @@
+{
+  "name": "A Blooming Love - Wedding Invitation",
+  "description": "A digital 3D wedding invitation for NeelaKumar and Sailaja, featuring an interactive 3D envelope, miniature rose garden, event details, and WhatsApp RSVP sharing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
